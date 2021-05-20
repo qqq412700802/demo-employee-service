@@ -2,6 +2,7 @@ package com.demo.employee.service;
 
 import com.demo.employee.company.entity.CompanyEntity;
 import com.demo.employee.company.service.CompanyService;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.Serializable;
@@ -9,6 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("companyManageService")
+@AllArgsConstructor
 public class CompanyManageService {
     private CompanyService<CompanyEntity> CompanyService;
 
