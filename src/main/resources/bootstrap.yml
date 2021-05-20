@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo-employee-service
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: config-service
+    consul:
+      host: consul-service.common
+      discovery:
+        prefer-ip-address: true
+        heartbeat: http://${spring.cloud.client.ip-address}:${server.port}/actuator/health
