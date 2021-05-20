@@ -16,8 +16,8 @@ public class CompanyManageService {
 
     @PostMapping("save")
     public int save(CompanyEntity entity) {
-        CompanyService.save(entity);
-        return entity.getId();
+        Integer id = CompanyService.save(entity);
+        return id;
     }
 
     @PostMapping("removeById")
