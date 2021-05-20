@@ -12,7 +12,7 @@ import java.util.List;
 @RequestMapping("companyManageService")
 @AllArgsConstructor
 public class CompanyManageService {
-    private CompanyService<CompanyEntity> CompanyService;
+    private CompanyService CompanyService;
 
     @PostMapping("save")
     public int save(CompanyEntity entity) {
